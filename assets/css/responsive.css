@@ -1,0 +1,74 @@
+ /* RESPONSIVE */
+ /* ----- PC ----- */
+ @media (min-width: 68.26666666666667em){
+    .header-main > li:hover >a{
+        color: black;
+        background-color: #ccc;
+    }
+    
+}
+ /* ----- TABLET ----- */
+@media (min-width: 49.333333333333336em) and (max-width: 68.2em){
+    
+}
+ /* ----- MOBILE ----- */
+@media (max-width: 49.266666666666666em){
+    /* ----- HEADER ----- */
+    #header{
+        overflow: hidden;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 0.16), 0 2px 10px 0 rgb(0 0 0 / 0.12);
+    }
+    .header-main {
+        display: block;
+    }
+    .header-main > li{
+        float: unset;
+    }
+    .header-main > li:first-child{
+        display: inline-block;
+    }
+    .header-sub{
+        position: unset;
+    }
+    .header-sub li{
+        background-color: #ccc;
+    }
+    .header-sub > li > a{
+        width: 100%;
+        padding: 8px 32px;
+    }
+    .search-btn{
+        display: none;
+    }
+    .menu-mobile-btn{
+        display: block;
+    }
+    /* ----- BAND TEAM ----- */
+    .band-team .member-mobile{
+        width: 100%;
+    }
+    .band-team .member-mobile img{
+        width: 230px;
+    }
+    /* ----- TOUR TICKET ----- */
+    .tour-place-mobile{
+        width: 100%;
+    }
+    .tour-place-mobile > div > button {
+        width: 100%;
+    }
+    /* ---- CONTACT ----- */
+    .contact-mobile{
+        width: 100%;
+    }
+    .contact-info > div {
+        width: 100%;
+    }
+    .contact-info div:last-child form > div input {
+        margin-bottom: 4px;
+    }
+    .contact-info div:last-child form > button {
+        width: 100%;
+    }
+    
+}
