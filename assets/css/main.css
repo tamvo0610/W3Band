@@ -314,6 +314,9 @@ html{
     display: block;
     clear: both;
 }
+.contact-info > div:last-child input{
+    border-radius: 3px;
+}
 .contact-info > div:first-child > p{
     font-size: 18px;
 }
