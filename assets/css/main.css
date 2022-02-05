@@ -146,7 +146,6 @@ html{
     right: 0;
     display: none;
 }
-
 /* END HEADER */
 /* START CONTENT */
 #content{
@@ -157,7 +156,7 @@ html{
     margin-left: auto;
     margin-right: auto;
 }
-/*----------Slider----------*/
+    /* ----- SLIDER ----- */
 #slider{
     width: 100%;
     padding-top: 50%;
@@ -184,7 +183,7 @@ html{
     margin: 15px 0;
    text-shadow: 0 0 1px #ccc;
 }
-/*----------The Band----------*/
+    /* ----- BAND TEAM ----- */
 #band{
     background-color: white;
 }
@@ -209,7 +208,7 @@ html{
     display: block;
     clear: both;
 }
-/*----------Tour Date----------*/
+    /* ----- TOUR TICKET ----- */
 #tour{
     width: 100%;
     background-color: black;
@@ -284,7 +283,7 @@ html{
     color: black;
     background-color: #ddd;
 }
-/*----------CONTACT----------*/
+    /* ---- CONTACT ----- */
 #contact{
     width: 100%;
     background-color: white;
