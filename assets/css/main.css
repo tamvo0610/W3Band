@@ -299,59 +299,59 @@ html{
     clear: both;
     display: block;
 }
-.contact-info div:first-child{
+.contact-info > div:first-child{
     float: left;
     text-align: left;
     margin-bottom: 16px;
     line-height: 1.5;
 }
-.contact-info div:last-child{
+.contact-info > div:last-child{
     float: right;
 }
-.contact-info div:first-child > p{
+.contact-info > div:first-child > p{
     font-size: 18px;
 }
-.contact-info div:first-child i[class*=fa-]{
+.contact-info > div:first-child i[class*=fa-]{
     width: 30px;
     height: 18px;
 }
-.contact-info div:first-child a{
+.contact-info > div:first-child a{
     color: black;
     text-decoration: unset;
     font-size: 18px;
 }
-.contact-info div:first-child a:hover{
+.contact-info > div:first-child a:hover{
     color: blue;
     text-decoration: underline;
 }
-.contact-info div:last-child form > div{
+.contact-info > div:last-child form > div{
     padding: 0 8px;
     margin: 0 -16px 8px -16px;
 }
-.contact-info div:last-child form > div > div{
+.contact-info > div:last-child form > div > div{
     padding: 0 8px;
     margin: 0 !important;
 }
-.contact-info div:last-child form > div input{
+.contact-info > div:last-child form > div input{
     line-height: 22.5px;
     padding: 8px;
     border: 1px solid #ccc;
     width: 100%;
 }
-.contact-info div:last-child form > input{
+.contact-info > div:last-child form > input{
     padding: 8px;
     border: 1px solid #ccc;
     line-height: 22.5px;
     width: 100%;
 }
-.contact-info div:last-child form > button{
+.contact-info > div:last-child form > button{
     border: 0;
     margin: 16px 0;
     background-color: black;
     color: white;
     float: right;
 }
-.contact-info div:last-child form > button:hover{
+.contact-info > div:last-child form > button:hover{
     background-color: #ccc;
     color: black;
     cursor: pointer;
