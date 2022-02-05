@@ -65,6 +65,7 @@ html{
     width: calc(100%/3);
 }
 .row2{
+    float: left;
     width: calc(50%);
 }
 /* Start Main */
@@ -307,6 +308,11 @@ html{
 }
 .contact-info > div:last-child{
     float: right;
+}
+.contact-info > div:last-child > form > div::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 .contact-info > div:first-child > p{
     font-size: 18px;
