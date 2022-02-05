@@ -43,6 +43,10 @@
     .menu-mobile-btn{
         display: block;
     }
+    /* ----- SLIDER ----- */
+    .slider-section{
+        padding: 8px 16px !important;
+    }
     /* ----- BAND TEAM ----- */
     .band-team .member-mobile{
         width: 100%;
