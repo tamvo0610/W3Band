@@ -98,7 +98,10 @@ html{
     display: inline-block;
     width: 100%;
 }
-
+.header-main > li:hover > a{
+    color: black;
+    background-color: #ccc;
+}
 .header-main > li:hover > .header-sub{
     display: block;
 }
