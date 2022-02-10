@@ -1,11 +1,7 @@
  /* RESPONSIVE */
  /* ----- PC ----- */
  @media (min-width: 68.26666666666667em){
-    .header-main > li:hover >a{
-        color: black;
-        background-color: #ccc;
-    }
-    
+
 }
  /* ----- TABLET ----- */
 @media (min-width: 49.333333333333336em) and (max-width: 68.2em){
