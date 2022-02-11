@@ -35,6 +35,7 @@
                     <li><a href="#" 
                         class="role1">Media</a></li>
                 </ul>
+                
             </li>
         </ul>
             <!-- Icon Search -->
@@ -42,38 +43,10 @@
             <i class="search-icon fa fa-search"></i>
         </a>
             <!-- Menu Mobile -->
-        <div id="js-mobile-menu" class="menu-mobile-btn role2">
+        <div id="nav_menumobile_show" class="menu-mobile-btn role2" onclick="NavMobileMenu()">
             <i class="menu-mobile-icon fa fa-bars"></i>
         </div>
     </div>
-        <!-- Header Mobile -->
-    <!-- <div id="header__mobile">
-        <label for="nav__mobile-input" class="menu-mobile-btn role2">
-            <i class="menu-mobile-icon fa fa-bars"></i>
-        </label>
-        <input type="checkbox" name="" id="nav__mobile-input" hidden>
-        <label for="nav__mobile-input" class="nav__overplay"></label>
-            <nav class="nav__mobile">
-                <label for="nav__mobile-input" class="nav__mobile-close">
-                    <i class="nav__mobile-close ti-close role2"></i>
-                </label>
-                <ul class="nav__mobile-list ">
-                    <li><a href="#band" class="role2">Band</a></li>
-                    <li><a href="#tour" class="role2">Tour</a></li>
-                    <li><a href="#contact" class="role2">Contact</a></li>
-                    <li><a href="#" class="role2">More
-                            <i class="fa fa-caret-down" style="font-size: 15px;"></i>
-                        </a>
-                        <ul class="header-sub">
-                            <li><a href="#" class="role1">Merchandise</a></li>
-                            <li><a href="#" class="role1">Extras</a></li>
-                            <li><a href="#" class="role1">Media</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-    </div> -->
-        <!-- End Header -->
     <div id="content">
         <div id="slider">
             <div class="slider-section">
@@ -130,7 +103,7 @@
                             </p>
                             <p class="tour-about">Fri 27 Nov 2016</p>
                             <p class="tour-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="js-buy-tickets role1">Buy Tickets</button>
+                            <button class="role1" onclick="OpenModal()">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="row3 tour-place-mobile">
@@ -141,7 +114,7 @@
                             </p>
                             <p class="tour-about">Fri 27 Nov 2016</p>
                             <p class="tour-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="js-buy-tickets role1">Buy Tickets</button>
+                            <button class="role1" onclick="OpenModal()">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="row3 tour-place-mobile">
@@ -152,7 +125,7 @@
                             </p>
                             <p class="tour-about">Fri 27 Nov 2016</p>
                             <p class="tour-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="js-buy-tickets role1">Buy Tickets</button>
+                            <button class="role1" onclick="OpenModal()">Buy Tickets</button>
                         </div>
                     </div>
                 </div>
@@ -201,10 +174,10 @@
             <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
         </p>
     </div>
-    <div class="ticket-modal js-modal">
+    <div id="js_modal" class="ticket-modal">
         <div class="ticket-modal-section">
             <header>
-                <span class="js-close-modal">X</span>
+                <span onclick="CloseModal()">X</span>
                 <h2>
                     <i class="fa fa-suitcase"></i>Tickets
                 </h2>
@@ -215,7 +188,7 @@
                 <p><label for=""><i class="fa fa-user"></i> Send To</label></p>
                 <input type="email" placeholder="Enter email">
                 <button>PAY <i class="fa fa-check"></i></button>
-                <button class="js-close-modal">Close <i class="fa fa-remove"></i></button>
+                <button onclick="CloseModal()">Close <i class="fa fa-remove"></i></button>
                 <p>Need <a href="">help?</a></p>
             </div>
         </div>

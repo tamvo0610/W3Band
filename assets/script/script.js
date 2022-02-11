@@ -1,45 +1,42 @@
- // ---TICKET MODAL
- const modal = document.querySelector('.js-modal')
- function showBuyTicket(){
-     modal.classList.add('open')
- }
- function hideBuyTicket(){
-     modal.classList.remove('open')
- }
- // SHOW
- const buyTickets = document.querySelectorAll('.js-buy-tickets')
- for (const buyTicket of buyTickets){
-     buyTicket.addEventListener('click',showBuyTicket)
- }
- // Hide
- const hideTickets = document.querySelectorAll('.js-close-modal')
- for (const hideTicket of hideTickets){
-     hideTicket.addEventListener('click',hideBuyTicket)
- }
+ // ---Modal MODAL
+function OpenModal(){  // OpenModal
+    document.getElementById("js_modal").style.display='flex' 
+}
+function CloseModal(){ // CloseModal
+    document.getElementById("js_modal").style.display='none'
+}
  // ---HEADER MOBILE
- var header = document.getElementById('header')
- var mobileMenu = document.getElementById('js-mobile-menu')
- var headerHeight = header.clientHeight;
- mobileMenu.onclick = function() {
-     var isClose = header.clientHeight === headerHeight;
-     if (isClose) {
-         header.style.height='fit-content'
-     }
-     else {
-         header.style.height= null
-     }
- }
- // ĐÓNG MỞ MENU
- var menuItems = document.querySelectorAll('.header-main li a[href*="#"')
- for (var i = 0; i < menuItems.length; i++){
+function NavDefault(){
+    document.getElementById("nav_menumobile_show").style.backgroundColor= null
+    document.getElementById("nav_menumobile_show").style.color='white'
+}
+var header = document.getElementById('header')
+var headerHeight = header.clientHeight;
+function NavMobileMenu(){
+    var isClose = header.clientHeight === headerHeight;
+    if (isClose) {
+        header.style.height='fit-content'
+        document.getElementById("nav_menumobile_show").style.backgroundColor='#ccc'
+        document.getElementById("nav_menumobile_show").style.color='black'
+    }
+    else {
+        header.style.height= null
+        NavDefault()
+    } 
+}
+// ĐÓNG MỞ MENU
+var menuItems = document.querySelectorAll('.header-main li a[href*="#"')
+for (var i = 0; i < menuItems.length; i++){
      var menuItem = menuItems[i];
      menuItem.onclick = function(event){
          var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('header-sub');
          if (!isParentMenu){
             header.style.height = null;
-         }
+            NavDefault()
+        }
          else{
-             event.preventDefault;
-         }
-     }
- }
+            event.preventDefault;
+            NavDefault()
+        }
+    }
+}

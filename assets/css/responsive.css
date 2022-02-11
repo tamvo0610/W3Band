@@ -29,10 +29,6 @@
     .header-sub li{
         background-color: #ccc;
     }
-    .header-sub > li > a{
-        width: 100%;
-        padding: 8px 32px;
-    }
     .search-btn{
         display: none;
     }
@@ -40,103 +36,6 @@
         display: block;
         cursor: pointer;
     }
-    .menu-mobile-btn:hover{
-        color: black;
-        background-color: #ccc;
-    }
-    /* Nav bar without JS */
-    /* #header{
-        display: none !important;
-    }
-    #header__mobile{
-        position: relative;
-        background-color: black;
-    }
-    .header__mobile__nar{
-        position: absolute;
-        top: 0;
-        left: 0;
-        line-height: 22.5px;
-        color: white;
-        text-transform: uppercase;
-        text-decoration: none;
-        display: inline-block;
-        width: 100%;
-    }
-    .nav__mobile{
-        overflow: hidden;
-        background-color: black;
-        margin-top: 22.5px;
-    }
-    .nav__mobile > li{
-        display: block;
-        position: relative;
-        list-style-type: none;
-    }
-    .nav__mobile > li > a{
-        color: white;
-        display: block;
-        text-transform: uppercase;
-        text-decoration: none;
-        width: 100%;
-    }
-    .nav__bar__mobile-btn{
-        float: right;
-        color: white;
-        display: none;
-    }
-    .nav__overplay{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.2);
-        display: none;
-        animation: FadeIn linear 0.3s;
-    }
-    .nav__mobile{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: violet;
-        width: 320px;
-        transform: translateX(-100%);
-        opacity: 0;
-        transition: transform linear 0.3s, opacity linear 0.3s;
-    }
-    
-    .nav__mobile-list > li{
-        display: block;
-        position: relative;
-    }
-    .nav__mobile-list > li > a{
-        color: white;
-        text-transform: uppercase;
-        text-decoration: none;
-        display: inline-block;
-        width: 100%;
-    }
-    .nav__mobile-close.ti-close{
-        float: right;
-        color: white;
-        font-size: 15px;
-    }
-    .nav__mobile-close::after{
-        content: "";
-        display: block;
-        clear: both;
-    }
-    #nav__mobile-input:checked ~ .nav__overplay{
-        display: block;
-    }
-    #nav__mobile-input:checked ~ .nav__mobile{
-        display: block;
-        transform: translateX(0);
-        opacity: 1;
-    } */
     /* ----- SLIDER ----- */
     .slider-section{
         padding: 8px 16px !important;
