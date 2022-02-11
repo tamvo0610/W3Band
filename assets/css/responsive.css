@@ -1,11 +1,17 @@
  /* RESPONSIVE */
  /* ----- PC ----- */
  @media (min-width: 68.26666666666667em){
-    
+    .header-main > li:hover > a{
+        color: black;
+        background-color: #ccc;
+    }
 }
  /* ----- TABLET ----- */
 @media (min-width: 49.333333333333336em) and (max-width: 68.2em){
-    
+    .header-main > li:hover > a{
+        color: black;
+        background-color: #ccc;
+    }
 }
  /* ----- MOBILE ----- */
 @media (max-width: 49.266666666666666em){
