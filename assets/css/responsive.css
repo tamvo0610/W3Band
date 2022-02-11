@@ -38,6 +38,11 @@
     }
     .menu-mobile-btn{
         display: block;
+        cursor: pointer;
+    }
+    .menu-mobile-btn:hover{
+        color: black;
+        background-color: #ccc;
     }
     /* Nav bar without JS */
     /* #header{

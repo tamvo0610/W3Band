@@ -385,6 +385,7 @@ html{
 }
 #footer i{
     font-size: 24px;
+    cursor: pointer;
 }
 #footer p{
     line-height: 22.5px;
