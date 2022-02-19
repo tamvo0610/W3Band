@@ -1,14 +1,15 @@
  /* RESPONSIVE */
  /* ----- PC ----- */
  @media (min-width: 68.26666666666667em){
-    .header-main > li:hover > a{
+    .header-main > li:hover > a, .header-main > li:hover > label{
         color: black;
         background-color: #ccc;
+        cursor: pointer;
     }
 }
  /* ----- TABLET ----- */
 @media (min-width: 49.333333333333336em) and (max-width: 68.2em){
-    .header-main > li:hover > a{
+    .header-main > li:hover > a, .header-main > li:hover > label{
         color: black;
         background-color: #ccc;
     }
@@ -16,6 +17,7 @@
  /* ----- MOBILE ----- */
 @media (max-width: 49.266666666666666em){
     /* ----- HEADER ----- */
+   
     #header{
         overflow: hidden;
         box-shadow: 0 2px 5px 0 rgb(0 0 0 / 0.16), 0 2px 10px 0 rgb(0 0 0 / 0.12);

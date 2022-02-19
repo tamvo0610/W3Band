@@ -12,9 +12,9 @@ function NavDefault(){
 }
 var header = document.getElementById('header')
 var headerHeight = header.clientHeight;
+
 function NavMobileMenu(){
-    var isClose = header.clientHeight === headerHeight;
-    if (isClose) {
+    if (header.clientHeight === headerHeight) {
         header.style.height='fit-content'
         document.getElementById("nav_menumobile_show").style.backgroundColor='#ccc'
         document.getElementById("nav_menumobile_show").style.color='black'
@@ -23,6 +23,21 @@ function NavMobileMenu(){
         header.style.height= null
         NavDefault()
     } 
+}
+
+//--- HEADER SUB
+console.log(header.clientWidth)
+function check() {
+    var test= document.getElementById('sub_mobile_check').checked;
+    if (header.clientWidth < 789){
+        if (test){
+        document.getElementById('sub_mobile').style.display='block'
+        } else {
+        document.getElementById('sub_mobile').style.display= 'none'
+        }
+    } else{
+        null
+    }
 }
 // ĐÓNG MỞ MENU
 var menuItems = document.querySelectorAll('.header-main li a[href*="#"')

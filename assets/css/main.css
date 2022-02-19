@@ -91,13 +91,14 @@ html{
     position: relative;
     list-style-type: none;
 }
-.header-main > li > a{
+.header-main > li > a, .header-main > li > label{
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
     width: 100%;
 }
+
 .header-main > li:hover > .header-sub{
     display: block;
 }
