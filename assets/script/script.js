@@ -5,6 +5,21 @@ function OpenModal(){  // OpenModal
 function CloseModal(){ // CloseModal
     document.getElementById("js_modal").style.display='none'
 }
+// Tích hợp close modal khi nhấn ESC
+document.onkeydown = function(e){
+    switch(e.which){
+        case 27:
+            CloseModal()
+    }
+}
+// Tích hợp close modal khi nhấn ra ngoài modal
+modal = document.getElementById("js_modal")
+window.onclick = function(e) {
+    if (e.target === document.getElementById("js_modal")) {
+        CloseModal()
+    }
+  }
+// Tích hợp close modal khi nhấn ra ngoài
  // ---HEADER MOBILE
 function NavDefault(){
     document.getElementById("nav_menumobile_show").style.backgroundColor= null
@@ -26,7 +41,6 @@ function NavMobileMenu(){
 }
 
 //--- HEADER SUB
-console.log(header.clientWidth)
 function check() {
     var test= document.getElementById('sub_mobile_check').checked;
     if (header.clientWidth < 789){
